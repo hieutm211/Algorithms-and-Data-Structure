@@ -3,7 +3,8 @@
 #define MAXN 100005
 using namespace std;
 
-int n, cnt, head[MAXN], adj[2*MAXN+1], nxt[2*MAXN+1], c[MAXN], child[MAXN], pos[MAXN], start[MAXN], h[MAXN], par[MAXN], p[MAXN][21], edge[2*MAXN+1], e[MAXN], t[4*MAXN], d[MAXN];
+int n, cnt;
+int head[MAXN], adj[2*MAXN+1], nxt[2*MAXN+1], c[MAXN], child[MAXN], pos[MAXN], start[MAXN], h[MAXN], par[MAXN], p[MAXN][21], edge[2*MAXN+1], e[MAXN], t[4*MAXN], d[MAXN];
 
 void add(int i, int u, int v, int w){
     nxt[i] = head[u];
