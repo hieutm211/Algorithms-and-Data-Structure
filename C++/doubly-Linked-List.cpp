@@ -3,6 +3,9 @@
 	Doubly-Linked-List reference - by hieutran
 
 	Declare a list example:				List<double> myList;		O(1)
+	Get size of the list:				myList.size()			O(1)
+	Check whether the list is empty:		myList.isEmpty()		O(1)
+	
 	add an element to the back of the list:		myList.addLast(value);		O(1)
 	add an element to the front of the list:	myList.addFirst(value);		O(1)
 	add an element to the i-th position:		myList.add(i, value);		O(N)
