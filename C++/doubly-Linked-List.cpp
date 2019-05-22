@@ -2,17 +2,17 @@
 /*
 	Doubly-Linked-List reference - by hieutran
 
-	Declare a list example:				            List<double> myList;		O(1)
+	Declare a list example:				List<double> myList;		O(1)
 	add an element to the back of the list:		myList.addLast(value);		O(1)
 	add an element to the front of the list:	myList.addFirst(value);		O(1)
-	add an element to the i-th position:		  myList.add(i, value);		O(N)
+	add an element to the i-th position:		myList.add(i, value);		O(N)
 
-	remove the first element:			            myList.removeFirst();		O(1)
-	remove the last element:			            myList.removeLast();		O(1)
-	remove all the elements:			            myList.removeAll();		O(1)
-	remove the i-th element:			            myList.remove(i);		O(N)
+	remove the first element:			myList.removeFirst();		O(1)
+	remove the last element:			myList.removeLast();		O(1)
+	remove all the elements:			myList.removeAll();		O(1)
+	remove the i-th element:			myList.remove(i);		O(N)
 
-	Sort the list from L to R-1:			 myList.sort(myList.iterator()+L, myList.iterator()+R);	O(NlogN)
+	Sort the list from L to R-1:			myList.sort(myList.iterator()+L, myList.iterator()+R);	O(NlogN)
 
 	print the list:					myList.print();			O(N)
 	print the list in reversed order:		myList.printReverse();		O(N);
