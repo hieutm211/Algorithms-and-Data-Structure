@@ -3,9 +3,6 @@
 	Doubly-Linked-List reference - by hieutran
 
 	Declare a list example:				List<double> myList;		O(1)
-	Get size of the list:				myList.size()			O(1)
-	Check whether the list is empty:		myList.isEmpty()		O(1)
-	
 	add an element to the back of the list:		myList.addLast(value);		O(1)
 	add an element to the front of the list:	myList.addFirst(value);		O(1)
 	add an element to the i-th position:		myList.add(i, value);		O(N)
@@ -237,6 +234,39 @@ public:
 		sort(begin, j+1);
 		sort(i, end);
 	}
+
+	ListIterator<T> mergeSort(ListIterator<T> begin, ListIterator<T> end) {
+		int numberOfElement = 0;
+		for (ListIterator<T> itr = begin; itr != end; itr++) {
+			numberOfElement++;
+		}
+
+		if (numberOfElement <= 1) {
+			return begin;
+		}
+
+		ListIterator<T> leftPtr = begin; 
+		ListIterator<T> rightPtr = begin + numberOfElement/2;
+
+		leftPtr = mergeSort(leftPtr, rightPtr);  //sort [leftPtr..endLeft-1]
+		rightPtr = mergeSort(rightPtr, end); //sort [rightPtr..rightPtr-1]
+
+		//merge
+		begin = leftPtr;
+
+		while (leftPtr != rightPtr && rightPtr != end) {
+			if (leftPtr.value() <= rightPtr.value()) {
+				leftPtr++;
+			} else {
+				add(leftPtr, rightPtr.value());	
+				if (leftPtr == begin) begin--;
+				ListIterator<T> temp = rightPtr;
+				rightPtr++;
+				remove(temp);
+			}
+		}
+		return begin;
+	}
 	//others
 	void print() {
 		cout << "List: ";
@@ -257,32 +287,47 @@ public:
 
 int main() {
 	List<double> list; // Create an empty Doubly Linked List
-	
-	for (int i = 0; i < 8; i++) {
-		list.addFirst(i);  // Add an element to the front of the list
-		list.addLast(i); // Add an element to the back of the list
+
+	string cmd;
+	while (cin >> cmd, cmd != "end") {
+		system("clear");
+
+		if (cmd == "add") {
+			cin >> cmd;
+			
+			if (cmd == "first") {
+				int value;
+				cin >> value;
+				list.addFirst(value);
+			} else if (cmd == "last") {
+				int value;
+				cin >> value;
+				list.addLast(value);
+			} else if (cmd == "index") {
+				int index, value;
+				cin >> index >> value;
+				list.add(index, value);
+			}
+		} else if (cmd == "remove") {
+			cin >> cmd;
+
+			if (cmd == "first") {
+				list.removeFirst();
+			} else if (cmd == "last") {
+				list.removeLast();
+			} else if (cmd == "index") {
+				int index;
+				cin >> index;
+				list.remove(index);
+			}
+		} else if (cmd == "sort") {
+			list.sort(list.iterator(), list.lastIterator());
+		} else if (cmd == "mergesort") {
+			list.mergeSort(list.iterator(), list.lastIterator());	
+		}
+
+		list.print();
 	}
-
-	list.print(); // print the list
-	list.printReverse(); // print the list in reversed order
-
-	list.add(5, -10); // add an element (-10) to the 5-th position
-	
-	list.removeFirst(); // remove the first element
-
-	list.print();
-
-	list.remove(2); // remove the element at position = 2
-
-	list.print(); 
-
-	list.sort(list.iterator() + 2, list.iterator()+10); // sort the list from 2-nd position to 10th position
-
-	list.print();
-
-	list.removeAll(); // remove all the elements
-
-	list.print();
 
 	return 0;
 }
