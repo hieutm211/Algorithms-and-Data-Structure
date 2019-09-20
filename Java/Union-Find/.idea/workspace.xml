@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ee786663-3c89-4c66-bf2c-8776cb0b4de1" name="Default Changelist" comment="" />
+    <list default="true" id="ee786663-3c89-4c66-bf2c-8776cb0b4de1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/QuickFindUF.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/QuickUnionUF.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UF.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/WeightedQuickUnionUF.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Union-Find/QuickFind.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QuickFind.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../uetcodehub/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../uetcodehub/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +25,14 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
   <component name="ProjectId" id="1QTEks8ysk3pJKkSzs8nHfKFuBL" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../uetcodehub" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -33,9 +49,37 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="QuickFind" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="QuickFind" />
+  <component name="RunManager" selected="Application.QuickFindUF">
+    <configuration name="QuickFindUF" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="QuickFindUF" />
+      <module name="Union-Find" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QuickUnion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="QuickUnion" />
+      <module name="Union-Find" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QuickUnionUF" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="QuickUnionUF" />
+      <module name="Union-Find" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UF" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="UF" />
+      <module name="Union-Find" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WeightedQuickUnionUF" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="WeightedQuickUnionUF" />
       <module name="Union-Find" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -43,7 +87,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.QuickFind" />
+        <item itemvalue="Application.QuickFindUF" />
+        <item itemvalue="Application.UF" />
+        <item itemvalue="Application.WeightedQuickUnionUF" />
+        <item itemvalue="Application.QuickUnionUF" />
+        <item itemvalue="Application.QuickUnion" />
       </list>
     </recent_temporary>
   </component>
@@ -59,5 +107,18 @@
       <updated>1567786331918</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
