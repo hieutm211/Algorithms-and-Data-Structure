@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee786663-3c89-4c66-bf2c-8776cb0b4de1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/QuickFindUF.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/QuickUnionUF.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UF.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/WeightedQuickUnionUF.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Union-Find/QuickFind.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/QuickFind.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../uetcodehub/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../uetcodehub/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../uetcodehub/src/FindVarience.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../uetcodehub/src/SortOddNumbers.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
