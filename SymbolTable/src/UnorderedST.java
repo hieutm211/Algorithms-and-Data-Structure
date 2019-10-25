@@ -1,8 +1,8 @@
 import java.util.Iterator;
 
-public class UnorderedST<K, V> {
+public class UnorderedST<K, V> implements SymbolTable<K, V> {
 
-    public static class Node<K, V> implements Iterator<Node> {
+    public static class Node<K, V> {
         private K key;
         private V value;
         private Node<K, V> next;
@@ -32,14 +32,6 @@ public class UnorderedST<K, V> {
         public void setNext(Node<K, V> next) {
             this.next = next;
         }
-
-        public boolean hasNext() {
-            return this.next != null;
-        }
-
-        public Node<K, V> next() {
-            return this.next();
-        }
     }
 
     private class KeyIterator<K> implements Iterator {
@@ -67,7 +59,7 @@ public class UnorderedST<K, V> {
         root = null;
     }
 
-    void put(K key, V value) {
+    public void put(K key, V value) {
         if (!contains(key)) {
             size++;
             root = new Node<>(key, value, root);
@@ -123,7 +115,7 @@ public class UnorderedST<K, V> {
         return size;
     }
 
-    public Iterable<K> keyIterator() {
+    public Iterable<K> keys() {
         return new Iterable<>() {
             public Iterator<K> iterator() {
                 return new KeyIterator<K>(root);
@@ -132,7 +124,7 @@ public class UnorderedST<K, V> {
     }
 
     public void print() {
-        for (K key : keyIterator()) {
+        for (K key : keys()) {
             System.out.print(key + " ");
         }
         System.out.println();

@@ -1,6 +1,6 @@
 import java.util.Iterator;
 
-public class OrderedST<Key extends Comparable<Key>, Value> {
+public class OrderedST<Key extends Comparable<Key>, Value> implements SymbolTable<Key, Value> {
 
     public static class Node<Key extends Comparable<Key>, Value> {
         private Key key;
