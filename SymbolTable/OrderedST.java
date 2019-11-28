@@ -80,7 +80,6 @@ public class OrderedST<Key extends Comparable<Key>, Value> implements SymbolTabl
     }
 
     //value paired with key (null if key is absent)
-    @SuppressWarnings("unchecked")
     public Value get(Key key) {
         int index = find(key);
 
@@ -92,7 +91,6 @@ public class OrderedST<Key extends Comparable<Key>, Value> implements SymbolTabl
     }
 
     //remove key (and its value) from table
-    @SuppressWarnings("unchecked")
     public void delete(Key key) {
         int index = find(key);
 
@@ -148,7 +146,6 @@ public class OrderedST<Key extends Comparable<Key>, Value> implements SymbolTabl
     }
 
     //key of rank k
-    @SuppressWarnings("unchecked")
     public Key select(int k) {
         return get(k).getKey();
     }
